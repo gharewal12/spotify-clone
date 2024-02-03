@@ -123,7 +123,7 @@ const Header: React.FC<HeaderProps> = ({
                         <div className='flex gap-x-4 items-center'>
                             <Button
                                 onClick={handleLogout}
-                                className='bgg-white px-6 py-2'
+                                className='bg-white px-6 py-2'
                             >
                                 Logout
                             </Button>
