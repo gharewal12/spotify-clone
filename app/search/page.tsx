@@ -1,5 +1,5 @@
 import React from 'react'
-import getSongsByTitle from '../actions/getSongs ByTitle';
+import getSongsByTitle from '@/actions/getSongs ByTitle';
 import Header from '@/components/Header';
 import SearchInput from '@/components/SearchInput';
 import SearchContent from './component/SearchContent';

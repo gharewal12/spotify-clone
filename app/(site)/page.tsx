@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import ListItem from "@/components/ListItem";
-import getSongs from "../actions/getSongs";
+import getSongs from "@/actions/getSongs";
 import PageContent from "./components/PageContent";
 
 // This page will not be cached and the data will always be up to date
