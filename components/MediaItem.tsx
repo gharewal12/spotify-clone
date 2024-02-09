@@ -1,11 +1,12 @@
 import useLoadImage from '@/hooks/useLoadImage';
+import useOnPlay from '@/hooks/useOnPlay';
 import { Song } from '@/types';
 import Image from 'next/image';
 import React from 'react'
 
 interface MediaItemProps {
     data: Song;
-    onClick: (id: string) => void;
+    onClick?: (id: string) => void;
 }
 
 const MediaItem: React.FC<MediaItemProps> = ({
@@ -15,12 +16,14 @@ const MediaItem: React.FC<MediaItemProps> = ({
 
     const imageUrl = useLoadImage(data);
 
+
     const handleOnClick = () => {
         if (onClick) {
             return onClick(data.id);
         }
 
         // TODO: Default turn on player
+        
     }
 
     return (
@@ -66,4 +69,4 @@ const MediaItem: React.FC<MediaItemProps> = ({
     )
 }
 
-export default MediaItem
+export default MediaItem;
